@@ -319,7 +319,7 @@
   ];
   
   function randomAdvice(initAdviceId) {
-    var currentIndex = parseInt($('#advice-number').html());
+    var currentIndex =  localStorage.advicenumber;//parseInt($('#advice-number').html());
     var randomIndex;
     var randomAdvice;
     var adviceHash;
@@ -347,13 +347,7 @@
     
     randomAdvice = advice[randomIndex];
     adviceHash = '/advice/'+randomAdvice[0];
-    
-    //$('#advice-number').html(randomAdvice[0]);
-    //$('#advice-txt').html(randomAdvice[1]);
-    localStorage.currentadvice = randomAdvice[1];
-    console.log(randomAdvice[0]);
-    console.log(randomAdvice[1]);
-    
+
     if(history.replaceState) {
         history.replaceState(null, null, '#'+adviceHash);
     }
@@ -362,23 +356,22 @@
     }
   }
   
-  var randomAdvice = randomAdvice;
+  //var randomAdvice = randomAdvice;
   function initAdvice() {
       randomAdvice();
   };
 
 
 //Send notification.
-function show(message) { 
+function show() {     
     var NowMoment = moment().format('LTS');
-    //localStorage.currentadvice = "Add some fucking contrast.";
     //Calling the advice
     initAdvice();
-    
+
     new Notification(NowMoment,{
-      icon: '/assets/img/icon128x128.png',
-      body: localStorage.currentadvice
-    });
+        icon: '/assets/img/icon128x128.png',
+        body: localStorage.currentadvice
+    });  
 }
 
 // Conditionally initialize the options.
@@ -405,5 +398,5 @@ if (window.Notification) {
       show();
       interval = 0;
     }
-  }, 60000);//3600000); Milliseconds
+  }, 3600000); //Milliseconds
 }

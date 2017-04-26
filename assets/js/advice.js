@@ -307,11 +307,6 @@
         [304,'Donâ€™t wait to be fucking discovered.'],
         [305,'Create your own fucking opportunities.'],
 
-
-
-
-
-
 	];
 	
 	function randomAdvice(initAdviceId) {
@@ -348,6 +343,8 @@
 		//$('#advice-txt').html(randomAdvice[1]);
 		console.log(randomAdvice[0]);
 		console.log(randomAdvice[1]);
+		localStorage.advicenumber = randomAdvice[0];
+    	localStorage.currentadvice = randomAdvice[1];
 		
 		if(history.replaceState) {
 		    history.replaceState(null, null, '#'+adviceHash);
