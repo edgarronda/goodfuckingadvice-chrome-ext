@@ -1,0 +1,21 @@
+body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+
+#wrap{
+	 width: 400px;
+	 max-width: 550px;
+     overflow: hidden;
+}
+#title { 
+	text-align: center;	
+}
+.advice-section{
+	text-overflow:
+	font-weight: 1000; 
+}
+.data{
+	text-align: center;
+	color: #263238;
+}

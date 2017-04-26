@@ -1,0 +1,27 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Edgar Ronda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="title">
+        <img id="image-result" hidden>
+      </div>      
+      <div id="advice-section">
+        <p id ="advice-number" class="id"></p>
+        <p id ="advice-txt" class="data"></p>
+      </div>
+    </div>
+  </body>
+</html>
+

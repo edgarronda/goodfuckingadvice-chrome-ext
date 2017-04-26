@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Good Fucking Advice",
+  "description": "Get good fucking advice by Edgar Ronda.",
+  "version": "1.0",
+
+  "author": "Edgar Ronda",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+  "icons": { "16": "/assets/img/icon16x16.png",
+            "48": "/assets/img/icon48x48.png",
+            "128": "/assets/img/icon128x128.png" 
+            },
+
+  "permissions": [
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "unlimitedStorage",
+    "notifications"
+    ],
+   "background": { "scripts": ["assets/js/jquery.min.js","assets/js/moment.min.js","assets/js/background.js",
+                    "assets/js/advice.js"] },
+
+  "web_accessible_resources": [
+    "assets/icon48x48.png"
+  ]
+}
