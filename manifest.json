@@ -24,8 +24,7 @@
     "unlimitedStorage",
     "notifications"
     ],
-   "background": { "scripts": ["assets/js/jquery.min.js","assets/js/moment.min.js","assets/js/background.js",
-                    "assets/js/advice.js"] },
+   "background": { "scripts": ["assets/js/jquery.min.js","assets/js/moment.min.js","assets/js/background.js"] },
 
   "web_accessible_resources": [
     "assets/icon48x48.png"

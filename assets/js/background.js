@@ -347,6 +347,11 @@
     
     randomAdvice = advice[randomIndex];
     adviceHash = '/advice/'+randomAdvice[0];
+    // console.log(randomAdvice[0]);
+    // console.log(randomAdvice[1]);
+
+    localStorage.advicenumber = randomAdvice[0];
+    localStorage.currentadvice = randomAdvice[1];
 
     if(history.replaceState) {
         history.replaceState(null, null, '#'+adviceHash);
