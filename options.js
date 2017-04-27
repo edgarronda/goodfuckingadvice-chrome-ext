@@ -14,8 +14,7 @@ window.addEventListener('load', function() {
   // Initialize the option controls.
   options.isActivated.checked = JSON.parse(localStorage.isActivated);
                                          // The display activation.
-  options.frequency.value = localStorage.frequency;
-                                         // The display frequency, in minutes.
+                                         
 
   if (!options.isActivated.checked) { ghost(true); }
 
