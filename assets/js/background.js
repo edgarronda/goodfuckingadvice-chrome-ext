@@ -403,5 +403,5 @@ if (window.Notification) {
       show();
       interval = 0;
     }
-  }, 3600000); //Milliseconds
+  }, 60000); //Milliseconds
 }
