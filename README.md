@@ -1,2 +1,2 @@
 # goodfuckingadvice-chrome-ext
-Chrome Extension with fancy quotes for developers.
+Chrome Extension with fancy quotes for fucking awesome developers.
