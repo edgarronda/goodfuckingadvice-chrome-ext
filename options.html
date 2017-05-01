@@ -3,27 +3,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Fucking Settings</title>
 
   <!-- Fucking CSS  -->
   <link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="options.js"></script>
 </head>
 <!-- Fucking Body  -->
 <body  class="blue-grey darken-4">
 
-  <nav class="blue-grey lighten-4" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Good Fucking Advice</a>
+  <!-- Fucking Navigation Bar -->
+  <nav class ="purple darken-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Good Fucking Advice</a>      
     </div>
   </nav>
 
+  <!-- Fucking Options -->
   <div class="container  blue-grey darken-3">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-            <h5 class="center  pink text-accent-3"> Display a fucking advice every:</h5>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">av_timer</i>Display a fucking advice every:</div>
+          <div class="collapsible-body">
               <form  id="options" class="col s12">
                 <div class="center row">
                   <div class="input-field col s12">
@@ -37,10 +40,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  
+                <div class="row">                  
                    <div class="input-field col s12">
-                      <select name="frequency" class="red-text darken-2">
+                      <select name="frequency" class="pink-text accent-3">
                         <option value="5">Every 5 Fucking Minutes</option>
                         <option value="20">Every 20 Fucking Minutes</option>
                         <option value="30">Every 30 Fucking Minutes</option>
@@ -52,7 +54,9 @@
                     </div>
                 </div>
               </form>
-      </div>
+          </div>
+        </li>
+      </ul>    
     </div>
     <br><br>
   </div>

@@ -7,14 +7,11 @@
   permission in the manifest file (or calling
   "Notification.requestPermission" beforehand).
 */
-
-
   
 //var randomAdvice = randomAdvice;
 function initAdvice() {
     randomAdvice();
 };
-
 
 //Send notification.
 function show() {     
