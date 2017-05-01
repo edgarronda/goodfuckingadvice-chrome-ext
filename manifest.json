@@ -24,7 +24,7 @@
     "unlimitedStorage",
     "notifications"
     ],
-   "background": { "scripts": ["assets/js/jquery.min.js","assets/js/moment.min.js",
+   "background": { "scripts": ["assets/js/jquery.min.js","assets/js/moment.min.js","assets/js/advice.js",
                     "assets/js/background.js","assets/js/materialize.min.js","assets/js/init.js"]},
    "options_page": "options.html",
 
