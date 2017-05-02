@@ -308,7 +308,7 @@
 
   ];
   
-  function randomAdvice(initAdviceId) {
+  function randomAdvice() {
     var currentIndex =  localStorage.advicenumber; //parseInt($('#advice-number').html());
     var randomIndex;
     var randomAdvice;
@@ -318,28 +318,13 @@
     if (isNaN(currentIndex)) currentIndex = 0;
     else currentIndex--;
     
-    if (initAdviceId) {
-      initAdviceId = parseInt(initAdviceId);
-      
-      for (var i = 0; i < advice.length; i++) {
-        if (advice[i][0] === initAdviceId) {
-          randomIndex = i;
-          break;
-        }
-      }
-    }
-    else {
-      // select random advice
-      do {
+    do {
         randomIndex = Math.floor(Math.random()*advice.length);
-      } while(randomIndex === currentIndex);
-    }
+    } while(randomIndex === currentIndex);
     
     randomAdvice = advice[randomIndex];
     adviceHash = '/advice/'+randomAdvice[0];
-    // console.log(randomAdvice[0]);
-    // console.log(randomAdvice[1]);
-
+    
     //Store random values into local storage.
     localStorage.advicenumber = randomAdvice[0];
     localStorage.currentadvice = randomAdvice[1];
